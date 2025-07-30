@@ -1,0 +1,142 @@
+/* Resetando os estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2e2c82, #00a8f3); /* Gradiente futurista */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00a8f3; /* Cor futurista */
+}
+
+/* Seção Principal */
+main {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #00a8f3;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Lista de Aplicações */
+ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Imagem */
+img {
+    width: 25%;
+    max-width: 700px;
+    margin: 20px 0;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Transições e animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efeito de Hover nos Links */
+a:hover {
+    color: #00a8f3; /* Azul futurista */
+    text-decoration: underline;
+    text-shadow: 0 0 10px #00a8f3;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 20px;
+    }
+}
